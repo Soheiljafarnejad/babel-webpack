@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: #ccc;
+  padding: 5rem 3rem;
+  margin: 15rem auto;
+  width: 700px;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 4rem;
+}
+
+.count {
+  margin: 4rem 0;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 2rem 0.5rem;
+}

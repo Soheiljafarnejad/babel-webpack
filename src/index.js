@@ -1,9 +1,20 @@
-const getName = () => console.log("hi");
+import "./css/index.css";
+import "./css/app.css";
 
-class App {
-  getName(name) {
-    console.log(`hi ${name}`);
-  }
-}
-
-new App().getName("soehil");
+const btns = document.querySelectorAll(".btn");
+const value = document.querySelector(".count");
+let count = 0;
+btns.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    const style = e.target.classList;
+    if (style.contains("decrement")) {
+      count--;
+    } else if (style.contains("increment")) {
+      count++;
+    }
+    if (style.contains("reset")) {
+      count = 0;
+    }
+    value.innerText = count;
+  });
+});
