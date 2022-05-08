@@ -1,0 +1,1 @@
+(new class{getName(e){console.log(`hi ${e}`)}}).getName("soehil");
